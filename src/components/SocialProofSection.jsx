@@ -34,7 +34,8 @@ function AnimatedCounter({ target, suffix = '', duration = 2000 }) {
 const stats = [
   { number: '350', suffix: '+', label: 'CC 1.0', sublabel: 'Online' },
   { number: '300', suffix: '+', label: 'CC 2.0', sublabel: 'Offline' },
-  { number: 'APR 2025', suffix: '', label: 'CC 4.0', sublabel: 'Coming Soon' },
+  { number: '1300', suffix: '+', label: 'CC 3.0', sublabel: 'Online' },
+  { number: 'APR 2026', suffix: '', label: 'CC 4.0', sublabel: 'Coming Soon' },
 ]
 
 export default function SocialProofSection() {
@@ -51,7 +52,7 @@ export default function SocialProofSection() {
           Our Legacy
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8 mb-14">
           {stats.map((s, i) => (
             <motion.div
               key={s.label}

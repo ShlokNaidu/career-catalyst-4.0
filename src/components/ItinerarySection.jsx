@@ -4,20 +4,20 @@ const days = [
   {
     date: 'APR 22',
     dayLabel: 'DAY 1',
-    title: 'Aptitude & Resume Evaluation',
-    desc: 'Speed, logic, and a brutal reality check of your resume.',
+    title: 'Orientation, Aptitude & Technical',
+    desc: 'Expert talks, aptitude test, non-coding technical round, and project statement release.',
   },
   {
     date: 'APR 23',
     dayLabel: 'DAY 2',
-    title: 'Technical Round & Talks',
-    desc: 'Core concepts under pressure, followed by industry insights on cracking drives.',
+    title: 'Group Discussion & Submission',
+    desc: 'Communicate and convince in the GD round. Evening submission for the mini-project.',
   },
   {
     date: 'APR 24',
     dayLabel: 'DAY 3',
-    title: 'GD Round + Mini Project',
-    desc: 'Communicate and build. Both on the same day.',
+    title: 'Interview Shortlist',
+    desc: 'Evaluation of previous rounds and final shortlist announcement for the interviews.',
   },
   {
     date: 'APR 25',
