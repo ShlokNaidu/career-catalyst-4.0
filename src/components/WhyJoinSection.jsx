@@ -3,23 +3,23 @@ import { motion } from 'framer-motion'
 const reasons = [
   {
     num: '01',
-    title: 'KNOW YOUR REAL LEVEL',
-    desc: 'Stop guessing. Compete and find out exactly where you stand.',
+    title: 'UNDERSTAND THE PROCESS',
+    desc: 'Stop guessing. Learn exactly how companies shortlist and evaluate candidates before you face the real deal.',
   },
   {
     num: '02',
     title: "PRESSURE YOU WON'T GET IN CLASS",
-    desc: 'Real interview simulation. Real GD pressure. Real aptitude cutoffs.',
+    desc: 'Real interview simulation. Real GD pressure. Experience the weight of a ticking clock and actual expectations.',
   },
   {
     num: '03',
     title: 'FIND YOUR WEAK SPOTS',
-    desc: 'Every round shows you what needs work before placements begin.',
+    desc: 'Every round shows you what needs work. Know your strengths and gaps before placements begin.',
   },
   {
     num: '04',
-    title: 'COMPETE WITH YOUR PEERS',
-    desc: 'Not against a textbook. Against real people at your level.',
+    title: 'DIRECT EXPERT FEEDBACK',
+    desc: 'Get evaluated by industry professionals telling you exactly what works and what will get you rejected.',
   },
 ]
 

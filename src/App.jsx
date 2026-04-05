@@ -7,6 +7,8 @@ import ItinerarySection from './components/ItinerarySection'
 import SocialProofSection from './components/SocialProofSection'
 import GallerySection from './components/GallerySection'
 import WhyJoinSection from './components/WhyJoinSection'
+import JudgesSection from './components/JudgesSection'
+import FAQSection from './components/FAQSection'
 import Footer from './components/Footer'
 import GrainOverlay from './components/GrainOverlay'
 
@@ -27,6 +29,8 @@ function App() {
       <SocialProofSection />
       <GallerySection />
       <WhyJoinSection />
+      <JudgesSection />
+      <FAQSection />
       <Footer instagramHandle={INSTAGRAM_HANDLE} />
     </>
   )

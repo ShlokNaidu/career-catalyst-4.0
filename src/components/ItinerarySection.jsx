@@ -4,14 +4,14 @@ const days = [
   {
     date: 'APR 22',
     dayLabel: 'DAY 1',
-    title: 'Aptitude Round',
-    desc: 'Speed and logic under time pressure.',
+    title: 'Aptitude & Resume Evaluation',
+    desc: 'Speed, logic, and a brutal reality check of your resume.',
   },
   {
     date: 'APR 23',
     dayLabel: 'DAY 2',
-    title: 'Technical Round',
-    desc: 'Core concepts. No code. No shortcuts.',
+    title: 'Technical Round & Talks',
+    desc: 'Core concepts under pressure, followed by industry insights on cracking drives.',
   },
   {
     date: 'APR 24',
@@ -23,7 +23,7 @@ const days = [
     date: 'APR 25',
     dayLabel: 'DAY 4',
     title: 'Interview Round',
-    desc: 'Face-to-face. The final filter.',
+    desc: 'Face-to-face with industry experts. The final filter.',
   },
 ]
 
@@ -48,7 +48,7 @@ export default function ItinerarySection() {
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
           className="font-body text-[#94A3B8] text-base md:text-lg mb-16 italic"
         >
-          4 days to prove yourself
+          4 days, 6 stages to prove yourself
         </motion.p>
 
         {/* Timeline */}

@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion'
 
 const rounds = [
-  { num: '01', name: 'APTITUDE', desc: 'Speed. Logic. Accuracy.' },
-  { num: '02', name: 'TECHNICAL', desc: 'Concepts without the crutch of code.' },
-  { num: '03', name: 'GROUP DISCUSSION', desc: 'Communicate. Convince. Lead.' },
-  { num: '04', name: 'MINI PROJECT', desc: 'Build fast. Think faster.' },
-  { num: '05', name: 'INTERVIEW ROUND', desc: 'The real thing. For real.' },
+  { num: '01', name: 'APTITUDE', desc: 'Tests logical reasoning, quantitative ability, and problem-solving speed.' },
+  { num: '02', name: 'TECHNICAL', desc: 'Core subjects (OOPs, DBMS, OS, CN). Focus on concepts.' },
+  { num: '03', name: 'GROUP DISCUSSION', desc: 'Communication, clarity of thought, and confidence.' },
+  { num: '04', name: 'MINI PROJECT', desc: 'Build or solve a problem within a limited time.' },
+  { num: '05', name: 'RESUME EVALUATION', desc: 'Honest, practical feedback to highlight strengths and areas of improvement.' },
+  { num: '06', name: 'INTERVIEW ROUND', desc: 'Face-to-face with industry experts. Real pressure, real feedback.' },
 ]
 
 export default function RoundsSection() {
@@ -19,7 +20,7 @@ export default function RoundsSection() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="font-display text-4xl md:text-6xl lg:text-7xl uppercase tracking-[0.06em] leading-[1.05] text-[#F1F5F9] mb-3"
         >
-          The 5 Rounds
+          The 6 Stages
         </motion.h2>
 
         <motion.p

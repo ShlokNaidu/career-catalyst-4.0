@@ -32,7 +32,7 @@ export default function HeroSection({ registrationOpen, registrationLink }) {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="font-mono-accent text-sm md:text-base tracking-[0.12em] text-[#A78BFA] block mb-6"
         >
-          // CAREER CATALYST 4.0
+          // AWS CLOUD CLUB · MEDICAPS UNIVERSITY
         </motion.span>
 
         <motion.h1
@@ -55,7 +55,7 @@ export default function HeroSection({ registrationOpen, registrationLink }) {
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.25 }}
           className="font-body text-[#94A3B8] text-base md:text-lg max-w-xl mt-6 leading-relaxed"
         >
-          Not another seminar. This is a real placement simulation.
+          Not another seminar. A real placement simulation experience.
         </motion.p>
 
         <motion.div
@@ -64,7 +64,7 @@ export default function HeroSection({ registrationOpen, registrationLink }) {
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.35 }}
           className="font-mono-accent text-xs md:text-sm tracking-[0.15em] text-[#94A3B8] mt-5 uppercase"
         >
-          4 Days · 5 Rounds · Apr 22–25
+          4 Days · 6 Stages · Apr 22–25
         </motion.div>
 
         <motion.div

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 export default function AboutSection() {
   const callouts = [
     { number: '4', label: 'Days of competition' },
-    { number: '5', label: 'Elimination rounds' },
+    { number: '6', label: 'Placement Stages' },
     { number: '2+', label: 'Editions completed' },
   ]
 
@@ -38,10 +38,7 @@ export default function AboutSection() {
             className="lg:col-span-3"
           >
             <p className="font-body text-[#94A3B8] text-base md:text-lg leading-[1.7] max-w-2xl">
-              Career Catalyst is a 4-day competitive event that simulates the real placement
-              process end-to-end. From aptitude to final interview — every round is designed
-              to pressure-test your skills the way actual company drives do. No filler. No
-              theory. Real competition, real feedback, real growth.
+              Career Catalyst 4.0 is the flagship event of the AWS Cloud Club at Medicaps University, designed to simulate the real placement experience and help students evaluate their actual readiness for campus recruitment. Much like a soldier prepares before entering the battlefield, this event ensures that students understand how placements truly work before they face them in reality.
             </p>
           </motion.div>
 
