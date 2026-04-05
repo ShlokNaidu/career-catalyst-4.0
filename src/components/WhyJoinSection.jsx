@@ -48,7 +48,7 @@ export default function WhyJoinSection() {
               className="py-10 md:py-12"
               style={{ borderBottom: '1px solid rgba(124, 58, 237, 0.12)' }}
             >
-              <span className="font-display text-5xl md:text-7xl text-[#7C3AED]/10 block leading-none mb-4">
+              <span className="font-display text-5xl md:text-7xl text-[#A78BFA]/25 block leading-none mb-4">
                 {r.num}
               </span>
               <h3 className="font-body font-semibold text-lg md:text-xl text-[#F1F5F9] tracking-wide mb-2">

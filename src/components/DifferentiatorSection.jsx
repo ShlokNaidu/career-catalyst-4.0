@@ -48,7 +48,7 @@ export default function DifferentiatorSection() {
               className="flex items-start gap-6 md:gap-10 py-8 md:py-10"
               style={{ borderBottom: '1px solid rgba(124, 58, 237, 0.12)' }}
             >
-              <span className="font-mono-accent text-3xl md:text-5xl text-[#7C3AED]/20 leading-none shrink-0 w-16 md:w-24">
+              <span className="font-mono-accent text-3xl md:text-5xl text-[#A78BFA]/25 leading-none shrink-0 w-16 md:w-24">
                 {p.num}
               </span>
               <div>
