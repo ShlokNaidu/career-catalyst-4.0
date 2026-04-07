@@ -1,16 +1,16 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
-import img1 from '../assets/DSC02006.JPG.jpeg'
-import img2 from '../assets/DSC02036.JPG.jpeg'
-import img3 from '../assets/DSC02058.JPG.jpeg'
-import img4 from '../assets/DSC02083.JPG.jpeg'
-import img5 from '../assets/DSC02128.JPG.jpeg'
-import img7 from '../assets/DSC_7232.JPG.jpeg'
-import img8 from '../assets/DSC_7303.JPG.jpeg'
-import img9 from '../assets/IMG_2673.JPG.jpeg'
-import img10 from '../assets/IMG_2891.JPG.jpeg'
-import img11 from '../assets/IMG_2949.JPG.jpeg'
+import img1 from '../assets/DSC02006.webp'
+import img2 from '../assets/DSC02036.webp'
+import img3 from '../assets/DSC02058.webp'
+import img4 from '../assets/DSC02083.webp'
+import img5 from '../assets/DSC02128.webp'
+import img7 from '../assets/DSC_7232.webp'
+import img8 from '../assets/DSC_7303.webp'
+import img9 from '../assets/IMG_2673.webp'
+import img10 from '../assets/IMG_2891.webp'
+import img11 from '../assets/IMG_2949.webp'
 
 const galleryItems = [
   { id: 1, label: 'CC · Event Moment', src: img1 },
@@ -56,7 +56,9 @@ export default function GallerySection() {
               >
                 <img 
                   src={item.src} 
-                  alt={item.label} 
+                  alt={item.label}
+                  loading="lazy"
+                  decoding="async" 
                   className="w-full h-auto block transform group-hover:scale-105 transition-transform duration-700 ease-out" 
                 />
                 <div className="absolute inset-0 bg-[#7C3AED]/20 group-hover:bg-transparent transition-colors duration-300 mix-blend-overlay" />
@@ -82,7 +84,9 @@ export default function GallerySection() {
           <div className="relative max-w-5xl w-full mx-6 flex flex-col items-center justify-center pointer-events-none">
             <img 
               src={lightbox.src} 
-              alt={lightbox.label} 
+              alt={lightbox.label}
+              loading="lazy"
+              decoding="async" 
               className="max-h-[85vh] w-auto object-contain rounded-sm shadow-2xl pointer-events-auto" 
             />
             <span className="font-mono-accent text-sm text-[#A78BFA] tracking-widest uppercase mt-4 block">
