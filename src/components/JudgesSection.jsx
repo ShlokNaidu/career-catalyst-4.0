@@ -3,31 +3,31 @@ import { motion } from 'framer-motion'
 const judges = [
   {
     id: '01',
-    name: 'Rajesh Verma',
-    role: 'Senior Software Engineer',
-    org: 'Microsoft',
-    detail: '8+ years in system design and technical interviews.',
+    name: 'To be revealed soon',
+    role: 'Senior Industry Expert',
+    org: 'Top Tech Firm',
+    detail: 'Experienced professional with years of system design and technical interviews.',
   },
   {
     id: '02',
-    name: 'Priya Sharma',
-    role: 'HR Head',
-    org: 'Infosys',
-    detail: 'Conducted 500+ campus placement drives.',
+    name: 'To be revealed soon',
+    role: 'Talent Acquisition Head',
+    org: 'Global Enterprise',
+    detail: 'Extensive experience in conducting campus placement drives and evaluations.',
   },
   {
     id: '03',
-    name: 'Ankit Deshmukh',
-    role: 'Product Manager',
-    org: 'Google',
-    detail: 'Ex-SDE, specializes in behavioral and case interviews.',
+    name: 'To be revealed soon',
+    role: 'Senior Product Manager',
+    org: 'Top Tech Giant',
+    detail: 'Specializes in behavioral, product sense, and case interviews.',
   },
   {
     id: '04',
-    name: 'Sneha Patil',
-    role: 'Talent Acquisition Lead',
-    org: 'TCS',
-    detail: 'Expert in GD moderation and aptitude assessment.',
+    name: 'To be revealed soon',
+    role: 'HR & Operations Lead',
+    org: 'Leading Firm',
+    detail: 'Expert in GD moderation, aptitude assessment, and cultural fit.',
   },
 ]
 
@@ -63,50 +63,22 @@ export default function JudgesSection() {
           // The ones who decide if you make it
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {judges.map((j, i) => (
-            <motion.div
-              key={j.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, ease: 'easeOut', delay: i * 0.08 }}
-              className="group flex gap-5 bg-[#0F0F1A] p-5 md:p-6 rounded-sm transition-colors duration-300 hover:bg-[#13132A]"
-              style={{ borderLeft: '3px solid rgba(124, 58, 237, 0.3)' }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderLeftColor = '#7C3AED'
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderLeftColor = 'rgba(124, 58, 237, 0.3)'
-              }}
-            >
-              {/* Placeholder avatar — rectangular, not circular */}
-              {/* TODO: replace with actual judge photo */}
-              <div className="shrink-0 w-16 h-20 md:w-20 md:h-24 bg-[#13132A] rounded-sm flex items-end justify-center overflow-hidden"
-                style={{ border: '1px solid rgba(124, 58, 237, 0.15)' }}
-              >
-                <span className="font-mono-accent text-[10px] tracking-widest text-[#A78BFA]/40 pb-2 uppercase">
-                  Photo
-                </span>
-              </div>
-
-              <div className="flex-1 min-w-0">
-                <span className="font-mono-accent text-xs tracking-[0.15em] text-[#A78BFA]/40 block mb-2">
-                  {j.id} /
-                </span>
-                <h3 className="font-body font-semibold text-base md:text-lg text-[#F1F5F9] mb-0.5 truncate">
-                  {j.name}
-                </h3>
-                <span className="font-body text-sm text-[#A78BFA] block">
-                  {j.role} — {j.org}
-                </span>
-                <p className="font-body text-xs md:text-sm text-[#94A3B8] mt-2 leading-relaxed">
-                  {j.detail}
-                </p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        <motion.div
+           initial={{ opacity: 0, scale: 0.95 }}
+           whileInView={{ opacity: 1, scale: 1 }}
+           viewport={{ once: true }}
+           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
+           className="flex flex-col items-center justify-center py-20 px-6 border border-[#7C3AED]/20 bg-[#0F0F1A] rounded-sm relative overflow-hidden"
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-[#7C3AED]/5 to-transparent pointer-events-none" />
+          
+          <h3 className="font-display text-3xl md:text-5xl text-[#F1F5F9] mb-4 tracking-wide uppercase relative z-10 text-center">
+            To Be Revealed Soon
+          </h3>
+          <p className="font-body text-[#94A3B8] max-w-lg mx-auto text-sm md:text-base text-center relative z-10 leading-relaxed">
+            We're lining up some of the best minds in the industry to evaluate your skills. Stay tuned as we unveil our esteemed panel of judges.
+          </p>
+        </motion.div>
       </div>
     </section>
   )
