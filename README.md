@@ -1,16 +1,18 @@
-# React + Vite
+# Career Catalyst 4.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the codebase for Career Catalyst 4.0! 
 
-Currently, two official plugins are available:
+## 📸 Adding new event photos to the gallery
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Hey guys, if you're adding new event photos to the gallery section, **PLEASE don't just dump the raw 10MB camera `.jpg` files straight into the repo**. It's gonna tank our load times and eat up bandwidth like crazy. 
 
-## React Compiler
+I wrote a quick script to handle the optimization for us. Here's all you need to do:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Drop your raw `.jpg` or `.png` files into the `src/assets/` folder.
+2. Open the terminal at the root and run `node optimize-images.mjs`.
+3. The script will automatically shrink them to a web-friendly size, convert them into super lightweight `.webp` files, and **delete** the original heavy jpegs (so you don't accidentally commit them).
+4. Go into `src/components/GallerySection.jsx` and add your images there. Make sure your imports end with `.webp` now instead of `.jpeg`!
 
-## Expanding the ESLint configuration
+That's it. Keep the site running insanely fast 🚀.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*(P.S. If the script fails because it can't find `sharp`, just run `npm install --save-dev sharp` first to install the image processor!)*
