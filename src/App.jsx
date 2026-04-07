@@ -12,8 +12,8 @@ import FAQSection from './components/FAQSection'
 import Footer from './components/Footer'
 import GrainOverlay from './components/GrainOverlay'
 
-const REGISTRATION_OPEN = false;
-const REGISTRATION_LINK = "https://your-google-form-link-here";
+const REGISTRATION_OPEN = true;
+const REGISTRATION_LINK = "https://forms.gle/d5ppeEUkdEg745bTA";
 const INSTAGRAM_HANDLE = "@medicaps_awsc";
 
 function App() {
