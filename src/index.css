@@ -133,8 +133,8 @@
   overflow: hidden;
 }
 
-.marquee-container:hover .animate-marquee,
-.marquee-container:hover .animate-marquee-reverse {
+.animate-marquee:hover,
+.animate-marquee-reverse:hover {
   animation-play-state: paused;
 }
 
