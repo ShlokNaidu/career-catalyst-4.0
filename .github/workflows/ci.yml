@@ -4,10 +4,14 @@ on:
   push:
 
 jobs:
-  test:
+  failing-test:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - run: npm install nonexistent-package-123
+      - name: Print test message
+        run: echo "Testing DeployFix AI"
+
+      - name: Force failure
+        run: exit 1
